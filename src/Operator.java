@@ -152,6 +152,13 @@ public class Operator {
         boolean checkNumber2 = 9 == 9.3335;
         System.out.println(checkNumber2);
 
+        //mostly used operators
+        // ++, --
+        // +
+        // ==, !=
+        // &&, ||
+        // ?, :
+
 
     }
 }
