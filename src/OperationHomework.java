@@ -1,3 +1,9 @@
+/**
+ * My first Homework
+ *
+ * @author Kätlin Padesaar-Korela
+ */
+
 public class OperationHomework {
     public static void main(String[] args) {
 
