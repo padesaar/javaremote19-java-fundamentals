@@ -64,7 +64,7 @@ public class StatementsExercises {
         }
 
         // Solution 2
-        // one line operation eg ternary operation (homework3)
+        // one line operation (homework3)
 
 
         System.out.println((j % 3 == 0 && j % 5 == 0) ? "FizzBuzz" : ((j % 3 == 0) ? "Fizz" : ((j % 5 == 0) ? "Buzz" : j + " ")));
