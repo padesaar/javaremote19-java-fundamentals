@@ -1,0 +1,90 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -1,8 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="Added operators">
+-      <change beforePath="$PROJECT_DIR$/src/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HelloWorld.java" afterDir="false" />
++    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="Statement examples added">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -57,7 +57,7 @@
+     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+   }
+ }</component>
+-  <component name="RunManager" selected="Application.HelloWorld">
++  <component name="RunManager" selected="Application.Statement">
+     <configuration name="DataType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="DataType" />
+       <module name="java-fundamentals" />
+@@ -86,11 +86,19 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++    <configuration name="Statement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Statement" />
++      <module name="java-fundamentals" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Application.HelloWorld" />
++        <item itemvalue="Application.Statement" />
+         <item itemvalue="Application.OperationHomework" />
+         <item itemvalue="Application.Operator" />
++        <item itemvalue="Application.HelloWorld" />
+         <item itemvalue="Application.DataType" />
+       </list>
+     </recent_temporary>
+@@ -160,7 +168,28 @@
+       <option name="project" value="LOCAL" />
+       <updated>1663264202369</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="Added OperationHomework">
++      <created>1663492639682</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1663492639682</updated>
++    </task>
++    <task id="LOCAL-00010" summary="Added OperationHomework">
++      <created>1663492712613</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1663492712613</updated>
++    </task>
++    <task id="LOCAL-00011" summary="Statement examples added">
++      <created>1663610318086</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1663610318086</updated>
++    </task>
++    <option name="localTasksCounter" value="12" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -180,6 +209,8 @@
+     <MESSAGE value="HelloWorld done" />
+     <MESSAGE value="Added datatype examples" />
+     <MESSAGE value="Added operators" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added operators" />
++    <MESSAGE value="Added OperationHomework" />
++    <MESSAGE value="Statement examples added" />
++    <option name="LAST_COMMIT_MESSAGE" value="Statement examples added" />
+   </component>
+ </project>
+\ No newline at end of file
