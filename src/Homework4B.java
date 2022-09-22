@@ -26,8 +26,16 @@ public class Homework4B {
         System.out.println("Average" + total/(float)b);
 
         // Homework 4-3
+        //   int[]a = {1, 7, 3, 10, 9};
 
 
+       for (int c = 0; c < a.length; c++){
+           System.out.println(a[c] + " ");
+       }
+        // reverse order
 
+        for (int c = a.length-1; c >= 0; c--) {
+            System.out.println(a[c] + " ");
+        }
     }
 }
