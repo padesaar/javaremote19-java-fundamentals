@@ -1,3 +1,5 @@
+package examples;
+
 /**
  * Examples of Arrays
  *
@@ -25,7 +27,7 @@ public class Array {
         //Java stores values in indexes, it starts from 0
         System.out.println(fruits[0]);
         System.out.println(b[4]);
-      // System.out.println(fruits[3]); // Array index out of bond
+      // System.out.println(fruits[3]); // examples.Array index out of bond
 
         System.out.println(b.length); //return the number of values in the array
 

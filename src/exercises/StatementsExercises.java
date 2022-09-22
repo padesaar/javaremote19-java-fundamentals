@@ -1,5 +1,7 @@
+package exercises;
+
 /**
- * Statement Exercises
+ * examples.Statement Exercises
  *
  * @author Kätlin Padesaar-Korela
  */
