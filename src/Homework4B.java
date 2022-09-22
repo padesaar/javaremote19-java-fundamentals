@@ -22,6 +22,8 @@ public class Homework4B {
 
 
         }
+        System.out.println( "Average" + " is " + (a[1] + a[2] + a[0] + a[3] + a[4]) /5); //solution 2
+
 
         System.out.println("Average" + total/(float)b);
 
