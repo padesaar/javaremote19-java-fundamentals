@@ -22,9 +22,7 @@ public class Homework5 {
           if (num[i] % 2 != 0 ) {
               System.out.println(num[i]);
 
-
            }
-
 
        }
         System.out.println("Task 2");
@@ -46,7 +44,6 @@ public class Homework5 {
         System.out.println("Number of odd integers : "+(a.length-c));
 
         System.out.println("Task 3");
-
 
 
         // Task 3: Write a Java program to find the duplicate values of of an array of integer values [1, 7, 3, 7, 10, 1, 9]
