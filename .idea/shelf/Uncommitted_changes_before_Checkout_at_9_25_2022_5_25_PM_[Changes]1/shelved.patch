@@ -1,0 +1,30 @@
+Index: src/Homework5.java
+===================================================================
+diff --git a/src/Homework5.java b/src/Homework5.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Homework5.java	
+@@ -0,0 +1,23 @@
++/**
++ * Homework 5
++ *
++ * @author Kätlin Padesaar-Korela
++ */
++
++
++public class Homework5 {
++    public static void main(String[] args) {
++
++        // First task: Write a Java program to print all odd numbers from an array [1, 7, 3, 10, 9]
++
++        int array = new array [1, 7, 3, 10, 9];
++
++        // System.out.println(year + " is " + (year % 400 == 0 || (year % 4 == 0 && year % 100 !=0)  ? " " : " not ") + " a leap year ");
++
++        System.out.println(array);
++
++    }
++
++
++
++    }
