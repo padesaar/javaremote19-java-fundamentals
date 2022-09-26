@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="Did my Array Second Largest element homework." />
+    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="Did my Array Second Largest element homework.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayElementFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayElementFinder.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +43,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Homework4A">
+  <component name="RunManager" selected="Application.ArrayElement">
+    <configuration name="ArrayElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayElement" />
+      <module name="java-fundamentals" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Homework2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Homework2" />
       <module name="java-fundamentals" />
@@ -63,6 +74,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayElement" />
         <item itemvalue="Application.Homework4A" />
         <item itemvalue="Application.Homework2" />
         <item itemvalue="Application.Homework5" />
@@ -127,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664220561724</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Did my Array Second Largest element homework.">
+      <created>1664221360289</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664221360289</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

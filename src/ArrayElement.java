@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Homework nr 5
  * Find the second largest element in an array [1, 7, 3, 10, 9]
@@ -10,7 +12,8 @@ public class ArrayElement {
 
 
         int [] inArray = {1, 7, 3, 10, 9};
-        int i;
+
+
         ArrayElementFinder arrayElementFinder = new ArrayElementFinder();
         String result = arrayElementFinder.findSecondLargestElement(inArray);
 
