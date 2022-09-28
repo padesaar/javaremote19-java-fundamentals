@@ -7,19 +7,23 @@ package examples;
  */
 public class DataType {
     //Primitive Data Types
-    // Numbers
+    // Numbers //default value is 0 if you dont assign value
     int a = 1;
+    int p; //called declaration
+    byte byteNumber = 120;
     long longNumber = 54545681351L;
     short shortNumber = -32000;
-    float decimalNumber = 2.45f;
+
+    float decimalNumber = 2.45f; //2.45
     double doubleDecimalNumber = 3.456d;
 
     //Character
-    char alpha =  'F';
+    char alpha =  'F'; //can hold only one alphabet
 
      //True/False
+    //asking a question
     boolean hadLunch = true; // had lunch?
-    boolean isHoliday = false;
+    boolean isHoliday = false; //default value is false
 
     /* Multi-line
     comment
@@ -44,7 +48,7 @@ public class DataType {
     String fruit = "apple", vegetable = "pumpkin";
 
     //Scope of class variables
-    private static String CAR = "Toyota";
+    private static String CAR = "Toyota"; //can used only this class file
     public static String FOOD = "Cake";
 
 
