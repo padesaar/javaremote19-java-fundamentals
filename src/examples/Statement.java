@@ -60,7 +60,7 @@ public class Statement {
     } else if(i < 9) {
         System.out.println("i is lesser");
 
-        } else {
+        } else { //optional always
         System.out.println("i is invalid");
     }
 
