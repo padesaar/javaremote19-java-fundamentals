@@ -127,7 +127,20 @@ public class StatementsExercises {
                 System.out.println("The given alphabet is not found");
         }
 
+        // extra exercise
+        // for or while loop
+        // Write a Java program to print all the odd numbers from 1-50
 
 
+        int h = 1;
+        for (; h <= 50; h++) {
+            if(h % 2 !=0){
+            System.out.println(h + " is odd number");
+        }
+
+
+
+
+}
 }
 }
