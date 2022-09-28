@@ -16,7 +16,7 @@ public class Operator {
 
         System.out.println(i);
 
-        System.out.println(i++); // value is still 0
+        System.out.println(i++); // value is still 0, i++ value võtab endale kui järgmine kord kasutad i-d
         i++; // i + 1 // (incremented value plus another increment)
 
         System.out.println(i);
@@ -27,11 +27,11 @@ public class Operator {
         System.out.println(y--);
         System.out.println(y);
 
-        // pre-decrement
+        // pre-decrement - makes value decrement right now not after you use same variable again
 
         int j = 10;
-        System.out.println(j);
-        System.out.println(--j);
+        System.out.println(j); //10
+        System.out.println(--j); //9
 
         // brackets are the highest priority
         int x = i + (-j); // sulgudes asja lahendab esimesena, x = i - j ehk 2 - 9 = -7
@@ -136,9 +136,9 @@ public class Operator {
 
         //Assigment operators
         x = x + y; // both are same
-        x += y;
-        x /= y;
-        x *= y;
+        x += y; // same as first one
+        x /= y; // x = x / y
+        x *= y; // x = x * y
 
         // Ternary operators (?, :)
         String ternary = (x > y) ? "Cat" : "Dog"; // see on true, siis prindib cat ja kui false, siis dog
