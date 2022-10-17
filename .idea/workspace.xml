@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="Bug fix&#10;Shopping program completed" />
+    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="Bug fix&#10;Shopping program completed">
+      <change afterPath="$PROJECT_DIR$/src/arrays/ConcatArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/arrays/RandomEven.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/quiz/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/quiz/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/quiz/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,20 +44,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Shopping">
-    <configuration name="Add" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.Add" />
-      <module name="java-fundamentals" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homeworks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Quiz">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="calculator.Calculator" />
       <module name="java-fundamentals" />
@@ -64,12 +58,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Divide" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.Divide" />
+    <configuration name="ConcatArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arrays.ConcatArrays" />
       <module name="java-fundamentals" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.*" />
+          <option name="PATTERN" value="arrays.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +71,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Multiply" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.Multiply" />
+    <configuration name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="quiz.Quiz" />
       <module name="java-fundamentals" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.*" />
+          <option name="PATTERN" value="quiz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomEven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="arrays.RandomEven" />
+      <module name="java-fundamentals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="arrays.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Quiz" />
+        <item itemvalue="Application.RandomEven" />
+        <item itemvalue="Application.ConcatArrays" />
         <item itemvalue="Application.Shopping" />
         <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.Multiply" />
-        <item itemvalue="Application.Add" />
-        <item itemvalue="Application.Divide" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665601976547</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Bug fix&#10;Shopping program completed">
+      <created>1665673645670</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665673645671</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
