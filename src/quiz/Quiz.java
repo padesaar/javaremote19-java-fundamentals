@@ -33,7 +33,7 @@ import java.util.Scanner;
 
 public class Quiz {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
 
         System.out.println("Welcome to the quiz!");
         System.out.println("--------------------");
@@ -59,9 +59,10 @@ public class Quiz {
             //creating a user answer object and assign it to the userAnswer array
             Answer answer = new Answer();
             answer.setQuestionId(question.getId());
-            answer.setCorrectOptionIndex(getAnswerOption(question.getOptions().length));
+            answer.setCorrectOptionIndex(getAnswerOption(question.getOptions().length - 1));
             userAnswers[j] = answer;
 
+            System.out.println();
         }
 
     Answer[] correctAnswers = getAnswers();
@@ -155,7 +156,7 @@ public class Quiz {
     private static void printCorrectAnswers(Question[] questions, Answer[] correctAnswers){
         System.out.println("CORRECT ANSWERS:");
         for (int i = 0; i < questions.length; i++) {
-            System.out.println((i + 1)  + ". "+ questions[i].getDescription());
+            System.out.println((i + 1)  + ". " + questions[i].getDescription());
 
             for(Answer answer: correctAnswers) {
                 if(Objects.equals(questions[i].getId(), answer.getQuestionId())) {

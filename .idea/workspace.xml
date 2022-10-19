@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="Bug fix&#10;Shopping program completed">
-      <change afterPath="$PROJECT_DIR$/src/arrays/ConcatArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arrays/RandomEven.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/quiz/Quiz.java" afterDir="false" />
+    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="RandomEven added and Quizz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quiz/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/quiz/Quiz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665673645671</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="RandomEven added and Quizz">
+      <created>1666029387953</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666029387953</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +201,8 @@
     <MESSAGE value="Added Calculator package and Shopping" />
     <MESSAGE value="Added Cart, ProductLine java class and coding to Shopping java class" />
     <MESSAGE value="Bug fix&#10;Shopping program completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix&#10;Shopping program completed" />
+    <MESSAGE value="RandomEven added and Quizz" />
+    <option name="LAST_COMMIT_MESSAGE" value="RandomEven added and Quizz" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
