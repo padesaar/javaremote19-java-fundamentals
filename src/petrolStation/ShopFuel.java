@@ -1,6 +1,6 @@
 package petrolStation;
 
-public class FuelQuantity {
+public class ShopFuel {
 
     private Fuel fuel;
     private double quantity;
