@@ -1,6 +1,5 @@
 package petrolStation;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /**
@@ -14,11 +13,102 @@ import java.util.Scanner;
 
 public class PetrolStationHomework {
     public static void main(String[] args) {
+        System.out.println("Shop Fuel");
+
+        Cart cart = new Cart();
+        cart.getProducts();
+        cart.setProducts();
+        double totalPrice;
+        cart.setTotalPrice(cart.getTotalPrice());
+
+        Fuel[] fuel = getFuel();
+        //displaying the products
+        for (int i = 0; i < fuel.length; i++) {
+            System.out.println(i+ "." + fuel[i].getName());
+        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Choose an option from above:");
+        int fuelChoice = scanner.nextInt();
+
+        System.out.println("Enter how many liters you want");
+        double quantity = scanner.nextDouble();
+
+        System.out.println("Filling up tank");
+        ShopFuel shopFuel = new ShopFuel();
+        shopFuel.setFuel(fuel[fuelChoice]);
+        shopFuel.setQuantity(quantity);
+        double price = fuel[fuelChoice].getPrice() * shopFuel.getQuantity();
+        shopFuel.setPrice(price);
+        while (quantity > 0 )  {
+
+            totalPrice = (fuel[fuelChoice].getPrice()) * quantity;
+           // System.out.println("Total amount of fuel is:" + quantity + ". Total price is:" +totalPrice);
+          break;
+        }
+
+        System.out.println("Do you want to add more fuel?");
+        System.out.println("1. Yes, 2.No");
+        System.out.println("Choose option above");
+        int answer = scanner.nextInt();
+
+        while (answer == 2) {
+           totalPrice = (fuel[fuelChoice].getPrice()) * quantity;
+           System.out.println("Total amount on fuel:" + quantity + ".Total price:" + totalPrice);
+            System.out.println("Proceed to Pay");
+            break;
+        }
+        double moreFuel = 0;
+        while (answer == 1) {
+            System.out.println("Enter how many liters you want to add");
+            moreFuel = scanner.nextDouble();
+            break;
+
+        }
+        while (quantity > 0) {
+            quantity += moreFuel;
+          //  totalPrice = price * quantity;
+           // System.out.println("Total amount of fuel:" + quantity + ".Total price: " + totalPrice);
+           // System.out.println("Proceed to Pay");
+            break;
+        }
+
+      totalPrice = (price * quantity);
+        System.out.println("Enter amount of money");
+        double money = scanner.nextDouble();
+
+
+        while (money == totalPrice) {
+            System.out.println("Payment correct. Thank you for shopping!");
+            break;
+
+
+        }
+        while (money > totalPrice) {
+            double resultOver = money - totalPrice;
+            System.out.println("Money that was overpaid:" + resultOver);
+            System.out.println("Proceed to cashier to return extra paid money!");
+            System.out.println("Thank you for your payment!");
+            break;
+
+
+        }
+        while (money < totalPrice) {
+            double resultUnder = money - totalPrice;
+            System.out.println("Unsufficient funds, add more money! You need to pay" + resultUnder + " more");
+            double addedMoney = scanner.nextDouble();
+            money += addedMoney;
+            System.out.println("Thank you for your payment!");
+            break;
+
+        }
 
 
     }
 
-    private static Fuel[] getProducts() {
+
+
+    private static Fuel[] getFuel() {
 
         Fuel fuel1 = new Fuel();
         fuel1.setName("Diesel");
@@ -36,74 +126,5 @@ public class PetrolStationHomework {
 
 
     }
-    private static int displayMainMenu() {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to Petrol Station \n----------------");
-        System.out.println("1. Shop fuel \n2. Shopping cart \n3. Exit");
-        System.out.println("Choose an option from above:");
-
-        return displayMainMenu();
-    }
-
-    private static ShopFuel getProductToCart () {
-        System.out.println("Shop Fuel");
-
-        Fuel[] products = getProducts();
-        //displaying the products
-        for (int i = 0; i < products.length; i++) {
-            System.out.println(i + "." + products[i].getName());
-        }
-
-        System.out.println(products.length + ". ");
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Choose an option from above:");
-        int productChoice = scanner.nextInt();
-
-        System.out.println("Enter how many liters you want");
-        Fuel product = new Fuel();
-        double fuelQuantity = scanner.nextDouble();
-        double fuel = 0;
-        double fuelPrice;
-            System.out.println("Filling up tank");
-
-            while(fuel <= fuelQuantity){
-            fuel++;
-
-        }
-
-        System.out.println("Do you want to add more fuel?");
-        System.out.println("1. Yes, 2.No");
-        System.out.println("Choose option above");
-        int answer = scanner.nextInt();
-
-        while (answer == 2) {
-            System.out.println("Proceed to Pay");
-            break;
-        }
-        double moreFuel = 0;
-        while (answer == 1) {
-            System.out.println("Enter how many liters you want to add");
-            moreFuel = scanner.nextDouble();
-
-        }
-        while (fuel <= moreFuel) {
-            fuel++;
-            fuelPrice = fuel * fuelQuantity;
-            System.out.println("Total amount of fuel:" + fuel + ".Total price: " + fuelPrice);
-
-        }
-
-
-        //price calculation
-        double price = products[productChoice].getPrice() * quantity;
-
-        //Creating product line for cart
-
-
-        return shopFuel;
-
-
-    }
 }

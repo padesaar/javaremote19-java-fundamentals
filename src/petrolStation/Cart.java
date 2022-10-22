@@ -9,7 +9,7 @@ public class Cart {
         return products;
     }
 
-    public void setProducts(Fuel[] products) {
+    public void setProducts() {
         this.products = products;
     }
 
@@ -20,4 +20,6 @@ public class Cart {
     public void setTotalPrice(double totalPrice) {
         this.totalPrice = totalPrice;
     }
+
+
 }
