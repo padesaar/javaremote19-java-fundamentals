@@ -7,7 +7,7 @@ import java.util.Scanner;
  * At the end user should pay for petrol. Consider multiple possibilities, like:
  * The user paid exactly as much as required.
  * The user paid too much (cashier should return the rest of the money).
- *  The user paid too little – should be asked for the rest.
+ * The user paid too little – should be asked for the rest.
  */
 
 
@@ -24,7 +24,7 @@ public class PetrolStationHomework {
         Fuel[] fuel = getFuel();
         //displaying the products
         for (int i = 0; i < fuel.length; i++) {
-            System.out.println(i+ "." + fuel[i].getName());
+            System.out.println(i + "." + fuel[i].getName());
         }
 
         Scanner scanner = new Scanner(System.in);
@@ -38,74 +38,78 @@ public class PetrolStationHomework {
         ShopFuel shopFuel = new ShopFuel();
         shopFuel.setFuel(fuel[fuelChoice]);
         shopFuel.setQuantity(quantity);
+        shopFuel.getPrice(fuel);
         double price = fuel[fuelChoice].getPrice() * shopFuel.getQuantity();
         shopFuel.setPrice(price);
-        while (quantity > 0 )  {
+        cart.setTotalPrice(price);
 
-            totalPrice = (fuel[fuelChoice].getPrice()) * quantity;
-           // System.out.println("Total amount of fuel is:" + quantity + ". Total price is:" +totalPrice);
-          break;
+        while (quantity > 0) {
+            break;
         }
-
         System.out.println("Do you want to add more fuel?");
         System.out.println("1. Yes, 2.No");
         System.out.println("Choose option above");
         int answer = scanner.nextInt();
 
         while (answer == 2) {
-           totalPrice = (fuel[fuelChoice].getPrice()) * quantity;
-           System.out.println("Total amount on fuel:" + quantity + ".Total price:" + totalPrice);
+            totalPrice = (fuel[fuelChoice].getPrice()) * quantity;
+            System.out.println("Total amount on fuel:" + quantity + ".Total price:" + totalPrice);
             System.out.println("Proceed to Pay");
             break;
         }
-        double moreFuel = 0;
+
         while (answer == 1) {
+
+            double moreFuel;
             System.out.println("Enter how many liters you want to add");
             moreFuel = scanner.nextDouble();
+
+            quantity = moreFuel + quantity;
+            totalPrice = fuel[fuelChoice].getPrice() * quantity;
+
+            System.out.println("Total amount on fuel:" + quantity + ".Total price:" + totalPrice);
+            System.out.println("Let's proceed to checkout!");
             break;
 
         }
-        while (quantity > 0) {
-            quantity += moreFuel;
-          //  totalPrice = price * quantity;
-           // System.out.println("Total amount of fuel:" + quantity + ".Total price: " + totalPrice);
-           // System.out.println("Proceed to Pay");
-            break;
-        }
 
-      totalPrice = (price * quantity);
         System.out.println("Enter amount of money");
         double money = scanner.nextDouble();
 
 
-        while (money == totalPrice) {
-            System.out.println("Payment correct. Thank you for shopping!");
+        while (money == cart.getTotalPrice()) {
+            System.out.println("Payment correct. Thank you for getting fuel with us!");
             break;
 
 
         }
-        while (money > totalPrice) {
+        while (money > cart.getTotalPrice()) {
+            totalPrice = fuel[fuelChoice].getPrice() * quantity;
             double resultOver = money - totalPrice;
             System.out.println("Money that was overpaid:" + resultOver);
             System.out.println("Proceed to cashier to return extra paid money!");
-            System.out.println("Thank you for your payment!");
+            System.out.println("Thank you for getting fuel with us!");
             break;
 
 
         }
-        while (money < totalPrice) {
-            double resultUnder = money - totalPrice;
+        while (money < cart.getTotalPrice()) {
+            double resultUnder = money - cart.getTotalPrice();
             System.out.println("Unsufficient funds, add more money! You need to pay" + resultUnder + " more");
             double addedMoney = scanner.nextDouble();
             money += addedMoney;
-            System.out.println("Thank you for your payment!");
+            if ((addedMoney + money) > cart.getTotalPrice()) {
+                System.out.println("Thank you! Overpaid amount of money is:" + ((money + addedMoney) - cart.getTotalPrice()) + ". Please proceed to cashier.");
+            } else {
+                System.out.println("Thank you for your payment!");
+            }
+
+            System.out.println("Thank you for getting fuel with us!");
+
             break;
 
         }
-
-
     }
-
 
 
     private static Fuel[] getFuel() {
@@ -122,8 +126,7 @@ public class PetrolStationHomework {
         fuel3.setName("98 fuel");
         fuel3.setPrice(1.97d);
 
-        return new Fuel[] {fuel1, fuel2, fuel3};
-
+        return new Fuel[]{fuel1, fuel2, fuel3};
 
     }
 

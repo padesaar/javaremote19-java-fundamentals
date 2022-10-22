@@ -22,7 +22,7 @@ public class ShopFuel {
         this.quantity = quantity;
     }
 
-    public double getPrice(Fuel[] fuel) {
+    public double  getPrice(Fuel[] fuel) {
         return price;
     }
 
