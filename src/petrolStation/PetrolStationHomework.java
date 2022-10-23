@@ -94,13 +94,14 @@ public class PetrolStationHomework {
 
 
         }
-        while (money < cart.getTotalPrice()) {
-            double resultUnder = money - cart.getTotalPrice();
+        totalPrice = fuel[fuelChoice].getPrice() * quantity;
+        while (money < totalPrice) {
+            double resultUnder = money - totalPrice;
             System.out.println("Unsufficient funds, add more money! You need to pay" + resultUnder + " more");
             double addedMoney = scanner.nextDouble();
             money += addedMoney;
-            if ((addedMoney + money) > cart.getTotalPrice()) {
-                System.out.println("Thank you! Overpaid amount of money is:" + ((money + addedMoney) - cart.getTotalPrice()) + ". Please proceed to cashier.");
+            if ((addedMoney + money) > totalPrice) {
+                System.out.println("Thank you! Overpaid amount of money is:" + (resultUnder + addedMoney) + ". Please proceed to cashier.");
             } else {
                 System.out.println("Thank you for your payment!");
             }
