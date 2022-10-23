@@ -13,7 +13,8 @@ import java.util.Scanner;
 
 public class PetrolStationHomework {
     public static void main(String[] args) {
-        System.out.println("Shop Fuel");
+        System.out.println("WElCOME TO PETROL STATION!");
+        System.out.println("Feeling empty? Shop fuel!");
 
         Cart cart = new Cart();
         cart.getProducts();
