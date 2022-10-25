@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="Finished PetrolStation homework">
-      <change beforePath="$PROJECT_DIR$/src/petrolStation/PetrolStationHomework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/petrolStation/PetrolStationHomework.java" afterDir="false" />
+    <list default="true" id="a32b9dc4-66ea-4893-abd0-6a7c20b70671" name="Changes" comment="Bug Fix in Petrol station">
+      <change afterPath="$PROJECT_DIR$/src/PetrolStation2/PetrolStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PetrolStationHomework">
+  <component name="RunManager" selected="Application.PetrolStation">
     <configuration name="ArrayElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayElement" />
       <module name="java-fundamentals" />
@@ -63,9 +64,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Homework5" />
+    <configuration name="PetrolStation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PetrolStation2.PetrolStation" />
       <module name="java-fundamentals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PetrolStation2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,11 +92,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PetrolStation" />
         <item itemvalue="Application.PetrolStationHomework" />
         <item itemvalue="Application.ArrayElement" />
         <item itemvalue="Application.Homework4A" />
         <item itemvalue="Application.Homework2" />
-        <item itemvalue="Application.Homework5" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666530752583</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Bug Fix in Petrol station">
+      <created>1666531356544</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666531356544</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +230,7 @@
     <MESSAGE value="Started PetrolStationHomework" />
     <MESSAGE value="Almost finished PetrolStation..." />
     <MESSAGE value="Finished PetrolStation homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished PetrolStation homework" />
+    <MESSAGE value="Bug Fix in Petrol station" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug Fix in Petrol station" />
   </component>
 </project>
